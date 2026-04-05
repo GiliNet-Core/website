@@ -1,0 +1,455 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <script src="purify.min.js"></script>
+    <script src="gfengine.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>GiliNet</title>
+</head>
+<body>
+
+<div id="container">
+    <div id="header">
+        <div class="brand-container">
+            <div id="header-icon"></div> <h1>GiliNet</h1>
+        </div>
+        <ul id="navlist">
+            <li><a data-tab="home" id="nav-home" class="nav-link active" rel="noopener noreferrer">Home</a></li>
+            <li><a data-tab="projects" id="nav-projects" class="nav-link" rel="noopener noreferrer">Projects</a></li>
+            <li><a data-tab="structure" id="nav-structure" class="nav-link" rel="noopener noreferrer">Structure</a></li>
+            <li><a data-tab="prisec" id="nav-prisec" class="nav-link" rel="noopener noreferrer">PRISEC Policy</a></li>
+            <li><a data-tab="registry" id="nav-registry" class="nav-link" rel="noopener noreferrer">Wing Registry</a></li>
+            <li><a data-tab="active-index" id="nav-active-index" class="nav-link" rel="noopener noreferrer">Active Index</a></li>
+        </ul>
+    </div>
+
+    <div id="content-wrapper">
+        
+        <div id="main">
+            
+            <div id="home" class="tab-content active">
+                <h2>Welcome to GiliNet</h2>
+                <p><strong>GiliNet</strong> is a mass decentralized, collaboration community launched to develop, maintain and to inspect open source projects and to inspect, develop, decompile, protect and modify security infrastructures for better versions. We write open source systems, maintain those systems, and other's too. We protect the open source philosophy and battle the closed source ones, we also inspect and rate open source systems on how 'open' they are. We write code, hunt, seek vulnerabilities and penetrate open source security infrastructures for hardening them and upholding the reputation kept by open source systems as the <strong>most secure form of systems and infrastructure.</strong></p>
+
+                <h3>What is GiliNet?</h3>
+                <p>Unlike traditional organizations, GiliNet is a shared identity and a protocol. There are no corporate hierarchies. Authority is not assigned; it is earned through technical competence, running code, and verifiable audits. The collective focuses on:</p>
+                <ul>
+                    <li>Quality in the codes we write for each of our projects.</li>
+                    <li>Inspecting systems and infrastructures to see how 'open' they are.</li>
+                    <li>Building robust, open source systems and infrastructures to help the society and the development community and to fight the prevalence of closed source systems(but we don't hate them, we will help anybody).</li>
+                    <li>Making better versions of existing open source systems.</li>
+                    <li>Contributing to each nook and cranny of the world of open source development.</li>
+                    <li>Deep-dive decompilation and inspection of open-source security infrastructures.</li>
+                    <li>Development of "Hardened Forks" prioritizing user privacy and cryptographic integrity.</li>
+                    <li>Transparent, peer-reviewed vulnerability disclosure and remediation.</li>
+                </ul>
+                <h3>How to Join (Becoming a Gilian)</h3>
+                <p>Membership requires no formal application, interviews, or centralized vetting. You become a <strong>Gilian</strong> by joining an existing wing or simply by contributing to GiliNet projects. Your allegiance can remain entirely undisclosed if that is your wish.</p>
+                <h3>How to Start a Wing</h3>
+                <p>To create a new, officially recognized division or wing, you only need to declare it. Add the following line to your project repository, website, or communication channel:</p>
+                <pre><code>"This wing is affiliated with GiliNet."</code></pre>
+                <p>Once declared, your wing is autonomous yet a part of GiliNet. You may adopt, fork, or ignore the Core's rules.</p>
+                <h3>The Two Main Types of Wings</h3>
+                <p>GiliNet has two main types of wings: the PRISEC(Privacy and Security) which is the type for security and privacy related projects and the General, which is the type for general purpose projects.</p>
+
+                <h3>Philosophy</h3>
+                <p>We disallow spoon-feeding. GiliNet is for self-starters and experts. Disagreements are settled through data and logic. If a malicious or inefficient wing forms, the Core does not "disown" it. Instead, the market of contributors will naturally migrate to the most secure, productive, and ethical wings. Survival of the fittest dictates the official standard. And because of this principle amd our own limitations,we do not have a helpline and you can seek help from the available members of community or the resources/wiki page. </p>
+                <div class="box mirror-box">
+    <h3>Mirror This Website</h3>
+    <p>Deploy a decentralized mirror of this exact version. Copy the Content Identifier (CID) below to pin it to your node this would be extremely appreciated and will help GiliNet's reach available in restricted zones and make it nearly impossible to take down.</p>
+    <div class="cid-container">
+        <code id="wing-cid">bafybeigdyrxgbaekbzxzdhe5r5vd22f7m5w7o4gq43v3x5wexdch7u3s6q</code>
+        <button id="copy-cid-btn" class="submit-btn">Copy CID</button>
+    </div>
+ 
+</div>
+                <h3>Active Developments</h3>
+                <div class="project-scroll-container">
+                    <div class="project-item">
+                        <span class="project-title"><a href="https://github.com/Gili-Net/GiliFeed-Project" rel="noopener noreferrer">GiliFeed Project(GENERAL)</a></span> <span class="project-status">STABLE</span>
+                        <p class="project-desc">A web feed system project which consists of multiple applications which supports and improvise mainstream feed formats, but mostly JSON-based, like the feed reader, GFReader, the feed system engine and integration, GFEngine and the custom JSON-based feed system, GiliFeed. Maintained by WebDev@GiliNet wing, project host: nulsie</p>
+                    </div>
+                    <div class="project-item">
+                        <span class="project-title"><a href="https://gitlab.com/gilinetprisec/xsp" rel="noopener noreferrer">xsp(PRISEC)</a></span> <span class="project-status">UNSTABLE/IN DEVELOPMENT</span>
+                        <p class="project-desc">xsp or the Cross Site Purifier, a lightweight, optimized and late generation JavaScript sanitation library for sanitizing DOM and preventing XSS(Cross Site Scripting) attacks and is built on existing libraries and fixes the loopholes that the current libraries are vulnerable to. Maintained by WebSec@GiliNet wing. Project Host: nulsie</p>
+                    </div>
+                    
+                </div>
+                <img src="mrhissy1.png" alt="mr.hissy">
+            </div>
+
+            <div id="projects" class="tab-content">
+                <h2>GiliNet Project Directory</h2>
+                <p>A consolidated index of projects, PRISEC tools, and recognized "Hardened Forks" maintained by the collective. Contributions must pass peer review and automated security linting before merge. All the general projects of GiliNet are posted on the repos of our organization on <a rel="noopener noreferrer" href="https://github.com/Gili-Net">GitHub</a> while all the projects related to PRISEC are posted on the repos of our organization on <a rel="noopener noreferrer" href="https://gitlab.com/gilinetprisec">GitLab</a>.</p>
+                
+                <table class="index-table">
+                    <thead>
+                        <tr>
+                            <th>Project Name</th>
+                            <th>Classification</th>
+                            <th>Current Status</th>
+                            <th>
+                                Type
+                            </th>
+                            <th>Protocol/Link</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>GiliFeed</strong></td>
+                            <td>Web/Feed system</td>
+                            <td>Stable</td>
+                            <td>General</td>
+                            <td><a href="https://github.com/Gili-Net/GiliFeed-Project" rel="noopener noreferrer">GitHub</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>XSP</strong></td>
+                            <td>DOM Sanitizer/XSS Resistant</td>
+                            <td>Unstable/In Development</td>
+                            <td>PRISEC</td>
+                            <td><a href="https://gitlab.com/gilinetprisec/xsp" rel="noopener noreferrer">GitLab</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>GiliNet Website</strong></td>
+                            <td>Website Security Enhancement/Website Development</td>
+                            <td>Stable</td>
+                            <td>General</td>
+                            <td><a href="https://github.com/Gili-Net/GiliNet-Website" rel="noopener noreferrer">GitHub</a></td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="structure" class="tab-content">
+                <h2>Organizational Structure</h2>
+                <p>GiliNet utilizes a system of Radical Decentralization. There are no definitive masters, only reference implementations. The organization doesn't have an actual omnipotent head, but only a 'host' with powers limiting only to the core. While the organization consists of wings or divisions around the core with the same powers as the core.</p>
+
+                <h3>The Core</h3>
+                <p>The host division. The Core establishes reference policies, but holds no hard power. Influence is maintained purely through respect, the quality of the standards it produces, and the tools it develops. If a new Host renames the main organization, the founding body reverts to the title of "The Core" to preserve historical continuity.</p>
+
+                <h3>Divisions & Wings</h3>
+                <p>Anyone, anywhere, can create a sub-division. Wings are fully autonomous entities which are hosted by members for specific projects or topics and have the same powers and autonomy as the core and can disobey the suggestions of the core if it doesn't fit them and make their own custom directives if they want to and yet they are officially part of the organization. They structure themselves according to the needs of their specific projects (e.g., Linux Kernel Hardening, Cryptography Auditing, Open Source Intelligence). GiliNet has two main types of wings: the PRISEC(Privacy and Security) which is the type for security and privacy related projects and the General, which is the type for general purpose projects.</p>
+
+                <h3>Hosts</h3>
+                <p>Hosts are elected coordinators of a division. To prevent centralization of power, Hosts serve a maximum one-year term and possess strictly limited administrative power. They act as facilitators and infrastructure maintainers, not as rulers. The host do only have powers limiting to their own wings, and the 'main host' or the figure head of GiliNet only has powers limiting to their own division which is the core. If a host introduces a new policy, it will only be effective in the core, and the other divisions' hosts have the choice to blatantly ignore it or to adopt it based on how sound it is, the division can choose its own way of adopting policies, either by voting or the host choosing, but the suggested way is to do it by voting.</p>
+                
+                <h3>Indexing System</h3>
+                <p>The divisions/wings are always recognized as official parts if they are having the declaration text in their bases, but they could get connected with the organization and could have a discoverable representation by reporting to the core of their existence by their chosen representative or host through our e-mail(the way to register is explained in <a data-tab="registry" class="nav-link" rel="noopener noreferrer">Wing Registry</a>), this does not mean that the core controls them but simply that the  core is helping them with their visibility and seamless representation in the community. This would get them indexed in the <a data-tab="active-index" class="nav-link">active index</a> of the community which is the index which lets others search and join wings of GiliNet.</p>
+
+                <h3>Internal Safety Directives</h3>
+                <p>While wings are autonomous, the network survives on two non-negotiable survival rules:</p>
+                <ol>
+                    <li><strong>No Internal Targeting:</strong> Targeting GiliNet infrastructure, members, or partners is an unappealable ban from the Core registry. We build up; we don't tear each other down.</li>
+                    <li><strong>Loose Lips Sink Ships:</strong> Never reveal sensitive data, private keys, or PII of members or targets in unencrypted channels.</li>
+                </ol>
+                <p><em>Note on Forks:</em> If a malicious or inefficient wing is formed, the Core does not "disown" it. Instead, Gilians will naturally migrate to the most secure, productive, and ethical wings. Survival of the fittest dictates the official standard.</p>
+                <p><strong>
+   To download the file version of the</strong><a href="organization.html" download="organization.html" rel="noopener noreferrer">
+ GiliNet Architecture and Organizational Guidelines(HTML)</a></p>
+            </div>
+
+            <div id="prisec" class="tab-content">
+                <h2>GPRP v1.2 - GiliNet PRISEC Research Policy</h2>
+                <p>The Privacy and Security (PRISEC) division serves as the cyber security arm of GiliNet. This document dictates the Core's reference rules of engagement for security research, vulnerability hunting, and decompilation.</p>
+
+                <div class="warning">
+                    <strong>CRITICAL DIRECTIVE:</strong> Hacking or cracking closed/proprietary systems is suggested to be STRICTLY PROHIBITED by the PRISEC unless explicitly authorized by the vendor.
+                </div>
+
+                <h3>Operational Framework: The Tiered Zone System</h3>
+                <p>PRISEC operations are strictly governed by the classification of the target infrastructure.</p>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tier</th>
+                            <th>Category</th>
+                            <th>Authorization Level</th>
+                            <th>Primary Objective</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Tier 1 (Green)</strong></td>
+                            <td>Open-Source Systems</td>
+                            <td><strong>Full/Proactive</strong></td>
+                            <td>Vulnerability hunting, automated auditing, and the development of "Hardened Forks."</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tier 2 (Blue)</strong></td>
+                            <td>Authorized Proprietary</td>
+                            <td><strong>Restricted/Passive</strong></td>
+                            <td>Participation in official VDPs (Vulnerability Disclosure Policies) or Bug Bounties.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tier 3 (Red)</strong></td>
+                            <td>Critical Ecosystems</td>
+                            <td><strong>Educational/Static</strong></td>
+                            <td>Analysis of <em>previously published</em> vulnerabilities in strictly proprietary platforms and their products.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Tier 1: The Open-Source Mandate</h3>
+                <p>PRISEC officially commissions deep-dive <strong>decompilation</strong> and <strong>security audits</strong> of open-source projects. Members are encouraged to develop "Gili-Hardened" versions of these projects that prioritize user privacy, cryptographic integrity and overall security.</p>
+                <h3>Tier 2: The Authorized Proprietary Protocol</h3>
+                <p>Engagement with proprietary systems is permitted <strong>only</strong> if the hunt is in the public domain or follows a "normalized" process stated by the owner (e.g., a published Bug Bounty). Researchers must adhere strictly to the vendor's provided "Safe Harbor" guidelines.</p>
+                <h3>Tier 3: The Knowledge-Base Restriction (For Strictly Proprietary Products)</h3>
+                <p>Due to the unique legal landscapes surrounding these proprietary ecosystems, PRISEC will <strong>not</strong> commission original vulnerability research for unpatched (Zero-Day) exploits in these systems.</p>
+                <ul>
+                    <li>Activity is limited to the study, reproduction, and documentation of <strong>already disclosed</strong> vulnerabilities.</li>
+                    <li>The goal is purely educational: to help the community understand modern exploitation techniques and how to defend against them.</li>
+                </ul>
+                <h2>The PRISEC Code of Procedure (Rules of Engagement)</h2>
+                <p>All GiliNet collaborators must adhere to the following four pillars:</p>
+                <ol>
+                    <li><strong>Non-Disruption:</strong> Security audits and decompilation must be conducted in isolated environments. Research must never impact the availability or performance of live production systems or end-users.</li>
+                    <li><strong>Privacy Supremacy:</strong> Accessing, storing, or sharing Personally Identifiable Information (PII) or private user data is strictly prohibited. Research must focus on the <em>infrastructure</em>, not the <em>inhabitants</em>.</li>
+                    <li><strong>Integrity of Intent:</strong> Modifications and patches developed by GiliNet must objectively improve the system's security or privacy. GiliNet does not support the creation of "backdoors" or malicious alterations.</li>
+                    <li><strong>Standardized Disclosure:</strong> All vulnerabilities identified in Tier 1 or Tier 2 must follow the <strong>GiliNet Disclosure Procedure</strong>: a mandatory 90-day window for vendor remediation prior to any public announcement by PRISEC.</li>
+                </ol>
+                <h2>Commissioning and Supervision</h2>
+                <p>PRISEC uses a decentralized voting and operation model for its projects:</p>
+                <ul>
+                    <li><strong>Project Proposal:</strong> Any member may propose a "Security Audit" or "Hardening Project" for an open-source tool.</li>
+                    <li><strong>Zone Verification:</strong> The PRISEC host must verify that the target is "Green Zone" or "Authorized Blue Zone" before any official GiliNet resources are allocated.</li>
+                    <li><strong>Verification of Results:</strong> Rewards are only given once a reproducible Proof of Concept (PoC) and a proposed remediation (patch) have been submitted to the GiliNet repository.</li>
+                </ul>
+                <h2>Legal Safe Harbor &amp; Liability Disclaimer</h2>
+                <ul>
+                    <li><strong>Individual Responsibility:</strong> GiliNet is a platform for collaboration. All members are responsible for ensuring their research activities comply with their local jurisdictions.</li>
+                    <li><strong>No Indemnification:</strong> GiliNet does not provide legal defense for members who act outside the Tiered Zone System or violate the Code of Ethics.</li>
+                    <li><strong>Non-Malicious Intent:</strong> This policy serves as public evidence that GiliNet’s intent is the improvement of global security infrastructure through disassembly and audit, rather than unauthorized access or digital trespass.</li>
+                </ul>
+                <p><strong>To download the file version of </strong><a href="gprp-v1.2.html" download="gprp-v1.2.html" rel="noopener noreferrer">
+   GPRP-v.1.2(HTML) 
+</a></p>
+            </div>
+
+            <div id="registry" class="tab-content">
+                <h2>The Wing Registry</h2>
+                <p>To keep the decentralized network connected, the Core maintains an index of active GiliNet wings. The Core does not control these wings; it merely indexes them for visibility and inter-wing collaboration.</p>
+
+                <h3>Submit a Wing for Indexing</h3>
+                <p>To have your wing indexed, send a PGP-signed email to the Core with the following template. The PGP signature is mandatory to establish cryptographic identity.</p>
+                
+<pre>WING NAME: [e.g., GiliNet-Sec-EU]
+FOCUS: [e.g., Hardening Linux Kernels]
+OPS LINK: [e.g., Onion URL, GitHub Repo, Matrix Room]
+HOST ALIAS: [Optional]
+PGP SIGNATURE: [Required below]</pre>
+
+                <h3>Active Index Output</h3>
+                <pre><code>user@gilinet:~$ cat /var/lib/registry/active_wings.txt
+ID          FOCUS                             STATUS     PROTOCOL
+-------------------------------------------------------------------------
+CORE-01     Policy, Protocol & Indexing       Active     [Core Comm]
+PRISEC-ALPH OS Vulnerability Hunts            Active     [Encrypted Matrix]
+NET-GHOST   Anonymity Networks (I2P/Tor)      Active     [Onion v3]
+GN-DECOMP   Ghidra/Radare2 Scripting          Active     [Git Repo]
+[EOF]
+user@gilinet:~$ _</code></pre>
+ <div class="box" style="margin-top: 20px;">
+    <h3>Wing Registration Form</h3>
+    <p>Use this terminal to generate a sanitized registration payload. Submit the output block to the Core via your preferred encrypted channel.</p>
+    
+    <form id="wing-registry-form">
+        <div class="form-group">
+            <label for="w-name">WING NAME:</label>
+            <input type="text" id="w-name" required placeholder="e.g., GiliNet-Sec-EU">
+        </div>
+        
+        <div class="form-group">
+            <label for="w-focus">FOCUS:</label>
+            <input type="text" id="w-focus" required placeholder="e.g., Hardening Linux Kernels">
+        </div>
+        
+        <div class="form-group">
+            <label for="w-link">OPS LINK:</label>
+            <input type="text" id="w-link" required placeholder="e.g., Onion URL / Matrix Room">
+        </div>
+        
+        <div class="form-group">
+            <label for="w-alias">HOST ALIAS (Optional):</label>
+            <input type="text" id="w-alias" placeholder="e.g., host.cd">
+        </div>
+        
+        <div class="form-group">
+            <label for="w-pgp">PGP SIGNATURE:</label>
+            <textarea id="w-pgp" required rows="6" placeholder="-----BEGIN PGP SIGNATURE-----..."></textarea>
+        </div>
+        
+        <button type="submit" class="submit-btn">Generate Payload</button>
+    </form>
+
+    <div id="form-output" class="hidden" style="margin-top: 15px;">
+        <h4>Output Block (Copy & Submit):</h4>
+        <pre><code id="output-block"></code></pre>
+    </div>
+</div>
+            </div>
+
+            <div id="active-index" class="tab-content">
+                <h2>GiliNet Active Wing Index</h2>
+                <p>This index lists all currently recognized and cryptographically verified wings operating under the GiliNet protocol. To update your wing's status or add a new entry, submit a PGP-signed request to the Core registry.</p>
+                <div class="search-container">
+                    <label for="wing-search" style="display: none;">Search Active Index</label>
+                    <input type="text" id="wing-search" placeholder="Search by Wing ID, Class, Focus, or Host..." autocomplete="off">
+                </div>
+
+                <table class="index-table">
+                    <thead>
+                        <tr>
+                            <th>Wing ID</th>
+                            
+                            <th>Primary Focus</th>
+                            <th>Host/Alias</th>
+                            <th>Status</th>
+                            <th>Protocol/Link</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>WebDev@GiliNet</td>
+                            
+                            <td>Web Development(full stack)</td>
+                            <td>nulsie</td>
+                            <td>Active</td>
+                            <td><a href="https://matrix.to/#/%23webdev@gilinet:matrix.org" rel="noopener noreferrer">Matrix Space</a></td>
+                        </tr>
+                        <tr>
+                            <td>WebSec@GiliNet</td>
+                           
+                            <td>Web Security</td>
+                            <td>nulsie</td>
+                            <td>Active</td>
+                            <td><a href="https://matrix.to/#/%23websec@gilinet:matrix.org" rel="noopener noreferrer">Matrix Space</a></td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="news-1" class="tab-content">
+                <a class="back-link nav-link" data-tab="home" rel="noopener noreferrer">&lt;&lt; Return to Index</a>
+                <h2>Website Launched</h2>
+                <div class="news-date">Timestamp: 2026-04-02 | Origin: The Core</div>
+                <p>The Core has launched the main website for GiliNet which will contain the indexing system for the wings and will contain all the relevant documentations for the suggested policies and procedures for the organization. It will also contain the indexing for the ongoing and past projects of GiliNet and also the new updates from the organization. The website will be hosted in a single web server but will also be available on IPFS and will allow anybody to copy its Content Identifier(CID) which others could copy and then make mirrors of the website as a prevention to hostile takedowns and significantly mitigating DDoS.</p>
+            </div>
+
+            <div id="news-2" class="tab-content">
+                <a class="back-link nav-link" data-tab="home" rel="noopener noreferrer">&lt;&lt; Return to Index</a>
+                <h2>GPRP v.1.2 has been released</h2>
+                <div class="news-date">Timestamp: 2026-04-03 | Origin: Core(for Resources)</div>
+                <p>We are officially publishing the GiliNet Organization and Architecture Guidelines. This document serves as our "North Star" for maintaining system integrity, scalability, and internal structural clarity as we continue to evolve. The following is the documentation for the guidelines.</p>
+                <p>This document serves as the definitive legal and operational framework for the GiliNet PRISEC (Privacy and Security) division. It dictates the rules of engagement for security research, vulnerability hunting, and infrastructure modification.</p>
+                <p>The policy discusses about prohibition of vulnerability hunts in highly litigated closed source systems, but instead to openly do vulnerability hunts and PRISEC related research in open-source systems.</p>
+            </div>
+
+            <div id="news-3" class="tab-content">
+                <a class="back-link nav-link" data-tab="home" rel="noopener noreferrer">&lt;&lt; Return to Index</a>
+                <h2>Organizational Guideline is Released for Adoption</h2>
+                <div class="news-date">Timestamp: 2026-04-03 | Origin: Core(for Resources)</div>
+                <p>The policy and guidelines for organizational structuring has been released.</p>
+                <p></p>
+                
+                <p>The guidelines discusses about radical decentralization in the organization for it's own members' compatibility and for the survival of the organization incase of hostile takedowns or unpopular leadership.</p>
+                <p>It also talks about the philosophy of the organization and the values it preaches amd its own implementation of those values.</p>
+            </div>
+
+            <div id="uncopyright" class="tab-content">
+                <h3>Uncopyright</h3>
+                <p>This website and all its content is completely copyright free. Information should be free. And that means, everything you see here is on public domain and you can use it however you want. You could attribute us and it is highly appreciated but is not required at all. And for the sake of licensing it, we have licensed it under the Unlicense.</p>
+            </div>
+            <div id="verify" class="tab-content">
+                <h3>This Website was made by the Core</h3>
+                <p>This website and all its content are made by the Core of GiliNet, to prove please verify with the public key and PGP signature given below.</p>
+                <strong>Download the </strong><a href="pgp-message.signed.txt" rel="noopener noreferrer">signature(txt)</a>
+                <h3>Public Key</h3>
+                <pre>
+ -----BEGIN PGP PUBLIC KEY BLOCK-----
+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
+QG5vdGF0aW9ucy5vcGVucGdwanMub3Jna/v36bNzLexR4CLXZIi6o9y3NBlI
+FLoOM6m2ffJHVX8CmwwWIQQo69yzRvRxFq/gV2VVktJsI38E6QAAA74QAK45
+lmid9/s2UJ/8OTE87kYLjdxtGKB4RGEJz3XESQxO7EVRzkCmWFfURH1nEmoX
+3aUGt1y2ileYZkL8VIBtY2ZmwYvzivG/AnTE8VbYkmb5pN2evQjGUEHSRk6b
+tU4VVNmm1UhNDZ9T30Lem5JL0gbJVm//wxiDRCu4us4yNmQHfupPnLW6lAHs
+PzhYzJ3pkLV1SOBjocQ8bM+iSLujYvXUWDMpm8icEpfmVGn7rlH8gAHtLLu0
+x114NMLsu1wNWSh+bmtcgKfqdKZuGLbdU97yM7QXYj9anXSzUGGj/R79dNcD
+GjLmlP3R6nm1TqjcZTudXkz/Vn2OibBXHQ/f+jZS15+IUgkUuJ15uGe2avum
+NgpuSFDItGEXgz56QI5oAdWv1t8dPj7+5+BiS+lwB39G4XfH/yZ4Gcac7P3Y
+utdm2e5/oU5TLIh3LoOKbJK+qu+HtqBVGoRtv/q9zk6oL8UfcKOajECAUnPJ
+bijmtdYF0D/xKTogAkBHuT1ggUFf48a29NZhp/jpvjewXCgDwNbJXsauARgX
+NkqLTq3ntyM6xiLDqbwd1lo376H8LSlFI7yp160b1cZuoyr9cxkd6qzYWGmW
+Vg9ftsYqY7kGOQY319YZNwEjDtAxEBzE4m9Mr7Ye4NlPTvRuogw9PZddskIa
+Mnffck8XOfHac6CZ7ULv
+=4V8a
+-----END PGP PUBLIC KEY BLOCK-----
+
+                </pre>
+            </div>
+
+        </div> <div id="sidebar">
+            <div class="box">
+                <h3>Latest News</h3>
+                
+                <div id="news-scroll-container" class="news-scroll-container">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="footer">
+        <p><a data-tab="uncopyright" id="nav-uncopyright" class="nav-link" rel="noopener noreferrer">Uncopyrighted</a> by GiliNet 2026-2027</p>
+        <p>Maintained by the <a data-tab="verify" id="nav-verify" class="nav-link" rel="noopener noreferrer">Core</a></p>
+        <p>Site Generated: <span id="timestamp"></span></p>
+    </div>
+</div>
+
+</body>
+</html>

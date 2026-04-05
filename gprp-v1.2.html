@@ -1,0 +1,292 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPRP v1.2 - GiliNet PRISEC Research Policy</title>
+    <style>
+        /* Arch Wiki inspired CSS */
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            color: #222;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        #global-wrapper {
+            max-width: 950px;
+            margin: 0 auto;
+            padding: 2em;
+        }
+
+        h1#firstHeading {
+            font-size: 1.8em;
+            font-weight: normal;
+            border-bottom: 1px solid #a2a9b1;
+            margin-bottom: 0.25em;
+            padding-bottom: 0;
+            font-family: 'Linux Libertine', 'Georgia', 'Times', serif; /* Arch uses a serif for the main title */
+        }
+
+        h2 {
+            font-size: 1.5em;
+            font-weight: normal;
+            border-bottom: 1px solid #a2a9b1;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+            padding-bottom: 0.25em;
+        }
+
+        h3 {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+        }
+
+        p {
+            margin: 0.8em 0;
+        }
+
+        ul, ol {
+            margin: 0.3em 0 0 1.5em;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 0.3em;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+        /* Table of Contents */
+        #toc {
+            background-color: #f8f9fa;
+            border: 1px solid #a2a9b1;
+            padding: 10px 15px;
+            display: table;
+            margin-top: 1.5em;
+            margin-bottom: 1.5em;
+            font-size: 95%;
+        }
+
+        #toc h2 {
+            margin: 0;
+            padding: 0;
+            font-size: 1em;
+            font-weight: bold;
+            border: none;
+            display: inline;
+        }
+
+        #toc ul {
+            list-style-type: none;
+            margin-top: 0.5em;
+            margin-left: 0;
+            padding-left: 0;
+        }
+
+        #toc ul ul {
+            margin-left: 2em;
+        }
+
+        #toc a {
+            text-decoration: none;
+            color: #0645ad;
+        }
+
+        #toc a:hover {
+            text-decoration: underline;
+        }
+
+        .tocnumber {
+            color: #222;
+            padding-right: 0.5em;
+        }
+
+        /* Tables */
+        table {
+            border-collapse: collapse;
+            margin: 1em 0;
+            background-color: #f8f9fa;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #a2a9b1;
+            padding: 0.5em 1em;
+            text-align: left;
+        }
+
+        th {
+            background-color: #eaecf0;
+            font-weight: bold;
+        }
+
+        /* Meta Information Box */
+        .infobox {
+            float: right;
+            clear: right;
+            margin: 0 0 1em 1em;
+            background-color: #f8f9fa;
+            border: 1px solid #a2a9b1;
+            padding: 0.5em;
+            width: 250px;
+            font-size: 0.9em;
+        }
+
+        .infobox th {
+            text-align: left;
+            background-color: transparent;
+            border: none;
+            padding: 0.2em 0.5em;
+        }
+
+        .infobox td {
+            border: none;
+            padding: 0.2em 0.5em;
+        }
+
+        /* Quotes */
+        blockquote {
+            background-color: #f8f9fa;
+            border-left: 4px solid #0645ad;
+            margin: 1.5em 0;
+            padding: 0.5em 1em;
+            font-style: italic;
+        }
+
+        a {
+            color: #0645ad;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div id="global-wrapper">
+
+    <h1 id="firstHeading">GPRP v1.2 - GiliNet PRISEC Research Policy</h1>
+
+    
+
+    <p>This document serves as the definitive legal and operational framework for the GiliNet PRISEC (Privacy and Security) division. It dictates the rules of engagement for security research, vulnerability hunting, and infrastructure modification.</p>
+
+    <div id="toc">
+        <h2>Contents</h2>
+        <ul>
+            <li><a href="#Executive_Mandate"><span class="tocnumber">1</span> <span class="toctext">Executive Mandate</span></a></li>
+            <li><a href="#Technical_Definitions"><span class="tocnumber">2</span> <span class="toctext">Technical Definitions</span></a></li>
+            <li><a href="#Operational_Framework:_The_Tiered_Zone_System"><span class="tocnumber">3</span> <span class="toctext">Operational Framework: The Tiered Zone System</span></a>
+                <ul>
+                    <li><a href="#Tier_1:_The_Open-Source_Mandate"><span class="tocnumber">3.1</span> <span class="toctext">Tier 1: The Open-Source Mandate</span></a></li>
+                    <li><a href="#Tier_2:_The_Authorized_Proprietary_Protocol"><span class="tocnumber">3.2</span> <span class="toctext">Tier 2: The Authorized Proprietary Protocol</span></a></li>
+                    <li><a href="#Tier_3:_The_Knowledge-Base_Restriction"><span class="tocnumber">3.3</span> <span class="toctext">Tier 3: The Knowledge-Base Restriction</span></a></li>
+                </ul>
+            </li>
+            <li><a href="#The_PRISEC_Code_of_Ethics"><span class="tocnumber">4</span> <span class="toctext">The PRISEC Code of Procedure (Rules of Engagement)</span></a></li>
+            <li><a href="#Governance_and_Commissioning"><span class="tocnumber">5</span> <span class="toctext">Commissioning and Supervision</span></a></li>
+            <li><a href="#Legal_Safe_Harbor_and_Liability_Disclaimer"><span class="tocnumber">6</span> <span class="toctext">Legal Safe Harbor &amp; Liability Disclaimer</span></a></li>
+        </ul>
+    </div>
+
+    <h2 id="Executive_Mandate">1. Executive Mandate</h2>
+    <p>GiliNet is a mass collaboration community launched to develop, maintain, inspect and to protect open source projects and to inspect, develop, decompile and modify security infrastructures for better versions. The <strong>PRISEC Division</strong> serves as the collective’s cyber security arm, utilizing advanced security research, reverse engineering, and decompilation to identify systemic vulnerabilities and develop superior, "hardened" versions of existing tools for the public good.</p>
+
+    <h2 id="Technical_Definitions">2. Technical Definitions</h2>
+    <p>To ensure clarity across all operations, GiliNet defines its core activities as follows:</p>
+    <ul>
+        <li><strong>Security Audit/Vulnerability Hunting:</strong> The systematic evaluation of a system’s security properties and the search for potential vulnerabilities for patching them.</li>
+        <li><strong>Reverse Engineering:</strong> The process of analyzing a functional system to identify its components and their interrelationships to create representations of the system in another form.</li>
+        <li><strong>Decompile/Decompilation:</strong> The systematic method of disassembling an infrastructure or a system to learn or gather information about its inner workings, mechanisms and potential vulnerabilities.</li>
+        <li><strong>Security Hardening:</strong> The process of securing a system by reducing its surface of vulnerability through patches, configuration changes, or the removal of unnecessary functions.</li>
+        <li><strong>Responsible Disclosure:</strong> The practice of informing a system owner of a vulnerability and allowing a reasonable period for remediation before public release.</li>
+    </ul>
+
+    <h2 id="Operational_Framework:_The_Tiered_Zone_System">3. Operational Framework: The Tiered Zone System</h2>
+    <p>PRISEC operations are strictly governed by the classification of the target infrastructure.</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Tier</th>
+                <th>Category</th>
+                <th>Authorization Level</th>
+                <th>Primary Objective</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Tier 1 (Green)</strong></td>
+                <td>Open-Source Systems</td>
+                <td><strong>Full/Proactive</strong></td>
+                <td>Vulnerability hunting, automated auditing, and the development of "Hardened Forks."</td>
+            </tr>
+            <tr>
+                <td><strong>Tier 2 (Blue)</strong></td>
+                <td>Authorized Proprietary</td>
+                <td><strong>Restricted/Passive</strong></td>
+                <td>Participation in official VDPs (Vulnerability Disclosure Policies) or Bug Bounties.</td>
+            </tr>
+            <tr>
+                <td><strong>Tier 3 (Red)</strong></td>
+                <td>Critical Ecosystems</td>
+                <td><strong>Educational/Static</strong></td>
+                <td>Analysis of <em>previously published</em> vulnerabilities in strictly proprietary platforms and their products.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3 id="Tier_1:_The_Open-Source_Mandate">3.1 Tier 1: The Open-Source Mandate</h3>
+    <p>PRISEC officially commissions deep-dive <strong>decompilation</strong> and <strong>security audits</strong> of open-source projects. Members are encouraged to develop "Gili-Hardened" versions of these projects that prioritize user privacy, cryptographic integrity and overall security.</p>
+
+    <h3 id="Tier_2:_The_Authorized_Proprietary_Protocol">3.2 Tier 2: The Authorized Proprietary Protocol</h3>
+    <p>Engagement with proprietary systems is permitted <strong>only</strong> if the hunt is in the public domain or follows a "normalized" process stated by the owner (e.g., a published Bug Bounty). Researchers must adhere strictly to the vendor's provided "Safe Harbor" guidelines.</p>
+
+    <h3 id="Tier_3:_The_Knowledge-Base_Restriction">3.3 Tier 3: The Knowledge-Base Restriction (For Strictly Proprietary Products)</h3>
+    <p>Due to the unique legal landscapes surrounding these proprietary ecosystems, PRISEC will <strong>not</strong> commission original vulnerability research for unpatched (Zero-Day) exploits in these systems.</p>
+    <ul>
+        <li>Activity is limited to the study, reproduction, and documentation of <strong>already disclosed</strong> vulnerabilities.</li>
+        <li>The goal is purely educational: to help the community understand modern exploitation techniques and how to defend against them.</li>
+    </ul>
+
+    <h2 id="The_PRISEC_Code_of_Ethics">4. The PRISEC Code of Procedure (Rules of Engagement)</h2>
+    <p>All GiliNet collaborators must adhere to the following four pillars:</p>
+    <ol>
+        <li><strong>Non-Disruption:</strong> Security audits and decompilation must be conducted in isolated environments. Research must never impact the availability or performance of live production systems or end-users.</li>
+        <li><strong>Privacy Supremacy:</strong> Accessing, storing, or sharing Personally Identifiable Information (PII) or private user data is strictly prohibited. Research must focus on the <em>infrastructure</em>, not the <em>inhabitants</em>.</li>
+        <li><strong>Integrity of Intent:</strong> Modifications and patches developed by GiliNet must objectively improve the system's security or privacy. GiliNet does not support the creation of "backdoors" or malicious alterations.</li>
+        <li><strong>Standardized Disclosure:</strong> All vulnerabilities identified in Tier 1 or Tier 2 must follow the <strong>GiliNet Disclosure Procedure</strong>: a mandatory 90-day window for vendor remediation prior to any public announcement by PRISEC.</li>
+    </ol>
+
+    <h2 id="Governance_and_Commissioning">5. Commissioning and Supervision</h2>
+    <p>PRISEC uses a decentralized voting and operation model for its projects:</p>
+    <ul>
+        <li><strong>Project Proposal:</strong> Any member may propose a "Security Audit" or "Hardening Project" for an open-source tool.</li>
+        <li><strong>Zone Verification:</strong> The PRISEC host must verify that the target is "Green Zone" or "Authorized Blue Zone" before any official GiliNet resources are allocated.</li>
+        <li><strong>Verification of Results:</strong> Rewards are only given once a reproducible Proof of Concept (PoC) and a proposed remediation (patch) have been submitted to the GiliNet repository.</li>
+    </ul>
+
+    <h2 id="Legal_Safe_Harbor_and_Liability_Disclaimer">6. Legal Safe Harbor &amp; Liability Disclaimer</h2>
+    <ul>
+        <li><strong>Individual Responsibility:</strong> GiliNet is a platform for collaboration. All members are responsible for ensuring their research activities comply with their local jurisdictions.</li>
+        <li><strong>No Indemnification:</strong> GiliNet does not provide legal defense for members who act outside the Tiered Zone System or violate the Code of Ethics.</li>
+        <li><strong>Non-Malicious Intent:</strong> This policy serves as public evidence that GiliNet’s intent is the improvement of global security infrastructure through disassembly and audit, rather than unauthorized access or digital trespass.</li>
+    </ul>
+
+    <blockquote>
+        <strong>The GiliNet Golden Rule:</strong> We disassemble to understand. We audit to protect. We harden to endure. If a system is closed, we respect the gate; if it is open, we perfect the architecture.
+    </blockquote>
+
+</div>
+
+</body>
+</html>

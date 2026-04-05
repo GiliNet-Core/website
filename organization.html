@@ -1,0 +1,205 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GiliNet Architecture and Organizational Guidelines</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #121212;
+            --accent-color: #0056b3;
+            --danger-color: #ff5555;
+            --muted-color: #888888;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 0 auto;
+            max-width: 900px;
+            padding: 2rem;
+        }
+        h1, h2, h3 {
+            color: var(--accent-color);
+            font-weight: normal;
+        }
+        h1 {
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+        h2 {
+            margin-top: 2.5rem;
+            border-bottom: 1px dashed var(--muted-color);
+            padding-bottom: 0.2rem;
+        }
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+            background-color: var(--accent-color);
+            color: var(--bg-color);
+        }
+        code {
+            background-color: #ffffff;
+            padding: 0.2rem 0.4rem;
+            color: #222;
+        }
+        pre {
+            background-color: #ffffff;
+            padding: 1rem;
+            border-left: 3px solid var(--accent-color);
+            overflow-x: auto;
+        }
+        .warning {
+            color: var(--danger-color);
+            border-left: 3px solid var(--danger-color);
+            padding-left: 1rem;
+            margin: 1rem 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+        th, td {
+            border: 1px solid var(--muted-color);
+            padding: 0.5rem;
+            text-align: left;
+        }
+        th {
+            background-color: #ffffff;
+            color: var(--accent-color);
+        }
+        .footer {
+            margin-top: 4rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--muted-color);
+            font-size: 0.9em;
+            color: var(--muted-color);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>GiliNet Architecture and Organizational Guidelines</h1>
+        <p><em>Version: 1.0.0 | Status: Decentralized | Operations: Active</em></p>
+    </header>
+
+    <main>
+        <section id="mission">
+            <h2>1. The Mission</h2>
+            <p>GiliNet is a mass collaboration community built to develop, maintain, inspect, and protect open-source projects. We exist to inspect, develop, crack, and modify security infrastructures to build better, hardened versions. We operate as a community-driven organization for the digital commons.</p>
+        </section>
+
+        <section id="structure">
+            <h2>2. Organizational Structure (Radical Decentralization)</h2>
+            <p>GiliNet is not a corporation. It is a shared identity and a protocol. Authority is not assigned; it is earned through technical competence, trust, and running code.</p>
+            <ul>
+                <li><strong>The Core:</strong> The founding division. The Core establishes reference policies, but holds no hard power. Influence is maintained purely through respect and the quality of the standards it produces.</li>
+                <li><strong>Divisions & Wings:</strong> Anyone, anywhere, can create a sub-division. By stating, <code>"this wing is affiliated with GiliNet"</code>, the wing is officially part of the collective. Wings are autonomous and can adopt, fork, or ignore the Core's rules.</li>
+                <li><strong>Hosts:</strong> Elected coordinators of a division. Hosts serve a maximum one-year term and possess strictly limited administrative power. They are facilitators, not rulers.</li>
+                <li><strong>Gilians (Members):</strong> Membership requires no formal application. You become a Gilian by joining a wing or simply by contributing to GiliNet projects. Allegiance can remain undisclosed.</li>
+            </ul>
+            <p><em>Note on Forks:</em> If a malicious or inefficient wing is formed, the Core does not "disown" it. Instead, Gilians will naturally migrate to the most secure, productive, and ethical wings. Survival of the fittest dictates the official standard.</p>
+        </section>
+
+        <section id="rules-of-engagement">
+            <h2>3. Rules of Engagement</h2>
+            <p>These are the reference policies established by the Core. Wings are encouraged to adopt them to maintain operational integrity.</p>
+            
+            <h3>I. Technical Competence and Contribution</h3>
+            <ul>
+                <li><strong>Zero Spoon Feeding:</strong> GiliNet is for experts and self-starters. Do not ask questions that a five-minute search could answer.</li>
+                <li><strong>Document or It Didn't Happen:</strong> All developed tools, cracked systems, or modified infrastructures must be documented. We are a community of growth, not a hoard of secrets.</li>
+                <li><strong>Resource Integrity:</strong> Submitted resources must be clean, commented, and vetted.</li>
+            </ul>
+
+            <h3>II. Internal Safety</h3>
+            <ul>
+                <li><strong>Loose Lips Sink Ships:</strong> Never reveal sensitive data, private keys, or PII of members or targets in unencrypted channels.</li>
+                <li><strong>No Internal Targeting:</strong> Targeting GiliNet infrastructure, members, or partners is an immediate, unappealable ban. We build up; we don't tear each other down.</li>
+            </ul>
+
+            <h3>III. Conduct and Ethics</h3>
+            <ul>
+                <li><strong>The "No Heat" Policy:</strong> Do not use GiliNet resources for black-hat activities that bring legal heat to the collective. We modify for better security, not mindless vandalism.</li>
+                <li><strong>Merit Over Ego:</strong> Ideas are judged by technical soundness. Leave your ego at the door.</li>
+                <li><strong>Conflict Resolution:</strong> Disagreements are settled through data and logic. Flame wars result in removal.</li>
+            </ul>
+        </section>
+
+        <section id="prisec">
+            <h2>4. PRISEC Operational Limits (The Safe Harbor)</h2>
+            <p>The Privacy and Security (PRISEC) division adheres to strict boundaries to ensure the collective acts as a legal Security Research House.</p>
+            <div class="warning">
+                <strong>CRITICAL DIRECTIVE:</strong> Hacking or cracking closed/proprietary systems is STRICTLY PROHIBITED unless authorized.
+            </div>
+            <ul>
+                <li><strong>Open Source Priority:</strong> PRISEC officially engages in and commissions vulnerability hunts strictly for open-source systems.</li>
+                <li><strong>Proprietary Infrastructure:</strong> We engage with closed systems ONLY if the hunt is in the public domain, or if it is a normalized vulnerability disclosure process (e.g., Bug Bounties) stated by the owner.</li>
+                <li><strong>The Big Tech Policy:</strong> For ecosystems like Apple or Microsoft, GiliNet acts solely as a knowledge repository. We only publish or host vulnerabilities that are already publicly documented.</li>
+            </ul>
+        </section>
+
+        <section id="registry">
+            <h2>5. The Wing Registry</h2>
+            <p>To keep the decentralized network connected, the Core maintains an index of active GiliNet wings. The Core does not control these wings; it only indexes them for visibility.</p>
+            
+            <h3>Submit a Wing</h3>
+            <p>To have your wing indexed, send an encrypted email to the Core with the following template:</p>
+            <pre>
+WING NAME: [e.g., GiliNet-Sec-EU]
+FOCUS: [e.g., Hardening Linux Kernels]
+OPS LINK: [e.g., Onion URL, GitHub Repo, Discord]
+HOST ALIAS: [Optional]
+PGP SIGNATURE: [Required for verification]
+            </pre>
+
+            <h3>Active Index (Terminal Output)</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Wing ID</th>
+                        <th>Primary Focus</th>
+                        <th>Status</th>
+                        <th>Ops Protocol</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CORE-01</td>
+                        <td>Policy, Protocol & Indexing</td>
+                        <td>Active</td>
+                        <td>[Core Comm Channel]</td>
+                    </tr>
+                    <tr>
+                        <td>PRISEC-ALPHA</td>
+                        <td>OS Vulnerability Hunts</td>
+                        <td>Active</td>
+                        <td>[Encrypted Matrix]</td>
+                    </tr>
+                    <tr>
+                        <td>[WAITING_INPUT]</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>GiliNet is a decentralized collective. The Core indexes wings for visibility but exercises no authority over internal operations. Trust is earned, not assigned.</p>
+        <p>EOF</p>
+    </footer>
+
+</body>
+</html>

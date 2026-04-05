@@ -1,0 +1,305 @@
+/* Base Reset & Typography */
+body {
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #222;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    justify-content: center;
+    min-width: 1064px; 
+}
+a { color: #07b; text-decoration: none; }
+a:hover { text-decoration: underline; color: #333; }
+a:visited { color: #551a8b; }
+h1, h2, h3, h4 { margin-top: 1.5em; margin-bottom: 0.5em; font-weight: bold; }
+h1 { font-size: 1.8em; border-bottom: 2px solid #ccc; padding-bottom: 2px; }
+h2 { font-size: 1.5em; border-bottom: 1px solid #ddd; padding-bottom: 2px; }
+p { margin: 0.8em 0; }
+code, pre { font-family: monospace; background-color: #f4f4f4; }
+code { padding: 0.1em 0.3em; border: 1px solid #ccc; }
+pre { padding: 10px; border: 1px dashed #aaa; overflow-x: auto; font-size: 13px; }
+ul, ol { margin-top: 0.5em; margin-bottom: 0.5em; padding-left: 2em; }
+
+/* Global Layout */
+#container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+/* Top Navigation Bar */
+#header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #ffff00;
+}
+#header h1 {
+    margin: 0;
+    font-size: 24px;
+    border: none;
+    letter-spacing: 1px;
+    color: #fff;
+}
+#navlist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+#navlist li { margin-left: 15px; }
+#navlist a {
+    color: #ccc;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+#navlist a:hover, #navlist a.active { color: #fff; text-decoration: underline; }
+
+/* Main Content Area */
+#content-wrapper {
+    display: flex;
+    margin-top: 15px;
+    gap: 20px;
+}
+
+/* Right Sidebar */
+#sidebar {
+    width: 280px;
+    flex-shrink: 0;
+}
+.box {
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+.box h3 {
+    margin-bottom: 0;
+    background-color: #eee;
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+    font-size: 1.1em;
+    text-align: center;
+}
+.news-item { margin-bottom: 1em; border-bottom: 1px dotted #ccc; padding-bottom: 10px; }
+.news-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+.news-date { font-size: 0.85em; color: #666; font-family: monospace; }
+
+/* Main Content Panel */
+#main {
+    flex-grow: 1;
+    padding: 0 10px 20px 0;
+}
+.tab-content { display: none; }
+.tab-content.active { display: block; }
+
+/* Tables (Active Index) */
+.index-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-family: monospace;
+    font-size: 13px;
+}
+.index-table th, .index-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+.index-table th {
+    background-color: #eee;
+    color: #333;
+    font-weight: bold;
+}
+.index-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.index-table tbody tr:hover {
+    background-color: #f0f0f0;
+}
+
+/* Footer */
+#footer {
+    border-top: 1px solid #ccc;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Utility Classes */
+.warning {
+    border-left: 4px solid #cc0000;
+    background-color: #ffe6e6;
+    padding: 5px 10px;
+    margin: 10px 0;
+}
+table {
+    border-collapse: collapse;
+    margin: 1em 0;
+    background-color: #f8f9fa;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 0.5em 1em;
+    text-align: left;
+}
+
+th {
+    background-color: #eee;
+    font-weight: bold;
+}
+
+/* News Scroll Container */
+.news-scroll-container, .project-scroll-container {
+    overflow-y: auto;
+    padding-right: 5px;
+}
+.news-scroll-container { max-height: 250px; }
+.project-scroll-container { 
+    max-height: 180px; 
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    background: #fdfdfd; 
+    margin-bottom: 15px;
+}
+
+/* Custom Scrollbar for Terminal aesthetic */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #eee; }
+::-webkit-scrollbar-thumb { background: #888; }
+::-webkit-scrollbar-thumb:hover { background: #555; }
+
+/* Item formatting inside scrolls */
+.read-more { font-size: 0.85em; display: block; margin-top: 4px; font-weight: bold; cursor: pointer; }
+
+.project-item { margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px dashed #ddd; }
+.project-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+.project-title { font-weight: bold; color: #0056b3; font-family: monospace; font-size: 1.1em; }
+.project-status { font-size: 0.85em; background: #eee; padding: 1px 5px; border: 1px solid #ccc; display: inline-block; margin-left: 5px; }
+
+/* NEW CLASSES EXTRACTED FROM HTML INLINE STYLES */
+.project-desc {
+    margin: 4px 0 0 0; 
+    font-size: 0.9em;
+}
+
+.archived-tag {
+    font-size: 0.85em; 
+    color: #888;
+}
+
+.nav-link {
+    cursor: pointer;
+}
+
+/* Brand & Icon Styles */
+.brand-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#header-icon {
+    width: 32px;
+    height: 32px;
+    background: url(mrhissy.png);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #888;
+    font-size: 10px;
+    font-family: monospace;
+}
+ /* Registration Form Styles */
+#wing-registry-form {
+    margin-top: 15px;
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+.form-group label {
+    display: block;
+    font-family: monospace;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 3px;
+}
+
+#wing-registry-form input[type="text"],
+#wing-registry-form textarea {
+    width: 90%;
+    max-width: 500px;
+    padding: 6px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    font-family: monospace;
+    font-size: 13px;
+    color: #222;
+}
+
+#wing-registry-form input[type="text"]:focus,
+#wing-registry-form textarea:focus {
+    outline: none;
+    border-color: #555;
+    background-color: #fff;
+}
+
+.submit-btn {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #000;
+    padding: 8px 15px;
+    font-family: monospace;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.submit-btn:hover {
+    background-color: #555;
+}
+/* Active Index Search Bar */
+.search-container {
+    margin-bottom: 15px;
+}
+
+#wing-search {
+    width: 100%;
+    max-width: 600px;
+    padding: 8px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    font-family: monospace;
+    font-size: 13px;
+    color: #222;
+}
+
+#wing-search:focus {
+    outline: none;
+    border-color: #555;
+    background-color: #fff;
+}
+ /* Mirror Feature Styles */
+
+/* This ensures the sidebar truly disappears and the main area expands */
+.hidden { display: none !important; }
+.back-link { cursor: pointer; }
+
+ /* Hide the sidebar when the verify tab is active */
+#content-wrapper:has(#verify.active) #sidebar {
+    display: none;
+}
