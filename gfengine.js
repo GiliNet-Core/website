@@ -5,6 +5,7 @@ class GFEngine {
         this.corsProxy = config.corsProxy || '';
         this.ipfsGateway = config.ipfsGateway || 'https://ipfs.io/ipfs/';
         this.maxItems = config.maxItems || null;
+        this.items = [];
     }
 
     async init() {
