@@ -147,7 +147,7 @@ document.getElementById('timestamp').innerText = unix64.toString() + " (64-bit U
             feeds: [
                 'https://gili-net.github.io/feedlib/feed.json'
             ],
-            maxItems: 3
+            
         });
         engine.init();
     });
