@@ -4,8 +4,7 @@ class GFEngine {
         this.feedUrls = config.feeds || [];
         this.corsProxy = config.corsProxy || '';
         this.ipfsGateway = config.ipfsGateway || 'https://ipfs.io/ipfs/';
-        this.maxItems = config.maxItems || 5;
-        this.items = [];
+        this.maxItems = config.maxItems || null;
     }
 
     async init() {
