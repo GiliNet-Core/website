@@ -38,8 +38,8 @@ class GFEngine {
             }
         });
 
-        const results = await Promise.all(fetchPromises);
-        this.items = results.flat().sort((a, b) => b._unixTime - a._unixTime).slice(0, this.maxItems);
+         let sortedItems = results.flat().sort((a, b) => b._unixTime - a._unixTime);
+this.items = this.maxItems ? sortedItems.slice(0, this.maxItems) : sortedItems;
     }
 
     render(container) {
