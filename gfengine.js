@@ -38,7 +38,8 @@ class GFEngine {
             }
         });
 
-         let sortedItems = results.flat().sort((a, b) => b._unixTime - a._unixTime);
+         const results = await Promise.all(fetchPromises);
+        let sortedItems = results.flat().sort((a, b) => b._unixTime - a._unixTime);
 this.items = this.maxItems ? sortedItems.slice(0, this.maxItems) : sortedItems;
     }
 
